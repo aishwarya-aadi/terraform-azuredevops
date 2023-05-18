@@ -5,7 +5,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  subscription: Visual Studio Enterprise(8f216cc4-165f-4c04-9c67-278c251713a0)
+  subscription: Visual Studio Enterprise Subscription(8f216cc4-165f-4c04-9c67-278c251713a0)
   resourceGroup: resourcegroup-tfstate
   storageAccount: tfstateaish
   container: tfstateaish
