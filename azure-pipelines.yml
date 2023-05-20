@@ -65,7 +65,7 @@ steps:
   condition: eq(variables.anyTfChanges, true)
   inputs:
     provider: 'azurerm'
-    command: 'destroy'
+    command: 'apply'
     workingDirectory: '$(System.DefaultWorkingDirectory)/skip-step'
     commandOptions: 'tfplan'
     environmentServiceNameAzureRM: '$(subscription)'
