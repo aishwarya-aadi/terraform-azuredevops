@@ -24,7 +24,7 @@ steps:
     command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/skip-step'
     backendServiceArm: '$(subscription)'
-    backendAzureRmResourceGroupName: '$(resourceGroup)'
+    backendAzureRmResourceGroupName: 'terraform-tfstate' #'$(resourceGroup)'
     backendAzureRmStorageAccountName: '$(storageAccount)'
     backendAzureRmContainerName: '$(container)'
     backendAzureRmKey: 'YFl6ztByj91l7lzcf7Ktz9r152AKiF66KRy4Rgf1u0TbsagiHfYjWolv30bNQqvhGP38h8GORK8x+AStbMxWiA=='#'$(tfstateFile)'
