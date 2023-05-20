@@ -12,6 +12,6 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "terraform-rg"
-  location = "eastus"
+  name     = var.rg_name #"terraform-rg"
+  location = var.location #"eastus"
 }
