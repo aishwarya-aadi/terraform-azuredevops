@@ -38,7 +38,7 @@ steps:
     workingDirectory: '$(System.DefaultWorkingDirectory)/skip-step'
     commandOptions: '-out=tfplan'
     # commandOptions: '-detailed-exitcode -out=tfplan'
-    environmentServiceNameAzureRM: 'ARM' #'$(subscription)'
+    environmentServiceNameAzureRM: '$(subscription)'
 
 - task: PowerShell@2
   displayName: detect any terraform change
