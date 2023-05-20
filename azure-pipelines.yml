@@ -68,4 +68,4 @@ steps:
     command: 'apply'
     workingDirectory: '$(System.DefaultWorkingDirectory)/skip-step'
     commandOptions: 'tfplan'
-    environmentServiceNameAzureRM: 'ARM' #'$(subscription)'
+    environmentServiceNameAzureRM: '$(subscription)'
