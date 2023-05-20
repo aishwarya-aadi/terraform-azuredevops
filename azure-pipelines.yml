@@ -27,7 +27,7 @@ steps:
     backendAzureRmResourceGroupName: '$(resourceGroup)'
     backendAzureRmStorageAccountName: '$(storageAccount)'
     backendAzureRmContainerName: '$(container)'
-    backendAzureRmKey: '$(tfstateFile)'
+    backendAzureRmKey: 'YFl6ztByj91l7lzcf7Ktz9r152AKiF66KRy4Rgf1u0TbsagiHfYjWolv30bNQqvhGP38h8GORK8x+AStbMxWiA=='#'$(tfstateFile)'
 
 
 - task: TerraformTaskV4@4
