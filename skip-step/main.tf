@@ -4,6 +4,8 @@ terraform {
 }
 
 provider "azurerm" {
+  skip_provider_registration = "true"
+
   version = ">=3.9.0"
   # The "feature" block is required for AzureRM provider 2.x.
   features {}
