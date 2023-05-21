@@ -8,7 +8,7 @@ variables:
   subscription: Visual Studio Enterprise Subscription(8f216cc4-165f-4c04-9c67-278c251713a0)
   resourceGroup: resourcegroup-tfstate
   storageAccount: tfstateaish
-  container: tfstateaish
+  container: tfstateaishnew
   tfstateFile: terraform.tfstate
   anyTfChanges: false
 
