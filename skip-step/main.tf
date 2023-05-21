@@ -17,7 +17,7 @@ resource "azurerm_resource_group" "rg" {
 }
 
 resource "azurerm_log_analytics_workspace" "example" {
-  name                = "lg_aish_test"
+  name                = "lgaishtest"
   location            = var.location
   resource_group_name = var.rg_name
   sku                 = "PerGB2018"
@@ -25,7 +25,7 @@ resource "azurerm_log_analytics_workspace" "example" {
 }
 
 resource "azurerm_container_registry" "acr" {
-  name                = "acr_aish_test"
+  name                = "acraishtest"
   resource_group_name = var.rg_name
   location            = var.location
   sku                 = "Premium"
