@@ -1,13 +1,14 @@
 terraform {
-  backend "azurerm" {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "=3.9.0"
+    }
   }
 }
 
+# Configure the Microsoft Azure Provider
 provider "azurerm" {
-  skip_provider_registration = "true"
-
-  version = ">=3.9.0"
-  # The "feature" block is required for AzureRM provider 2.x.
   features {}
 }
 
