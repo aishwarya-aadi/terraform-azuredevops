@@ -15,20 +15,21 @@ resource "azurerm_resource_group" "rg" {
 }
 
 #resource "azurerm_virtual_network" "vnet" {
-#  name                = var.VnetHubName
+#  name                = "vnet-${var.Env}-${var.Location}"
 #  address_space       = var.VnetHubIp
 #  location            = var.Location
-#  resource_group_name = var.RgHubName
+#  resource_group_name = "rg-network-${var.Env}-${var.Location}"
 #}
 #
 #resource "azurerm_subnet" "subnet" {
 #    for_each = var.subnets
-#    resource_group_name = var.RgHubName
+#    resource_group_name = "rg-network-${var.Env}-${var.Location}"
 #    virtual_network_name = azurerm_virtual_network.vnet.name
 #    name = each.value["name"]
 #    address_prefixes = each.value["address_prefixes"]
 #  
 #}
+
 
 #resource "azurerm_log_analytics_workspace" "example" {
 #  name                = "lgaishtestnew"
