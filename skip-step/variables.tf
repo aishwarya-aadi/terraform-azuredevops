@@ -23,6 +23,7 @@ variable "VnetHubName" {
 variable "RgHubName" {
   type = any
   default = []
+}
 #variable "Env" {
 #    type = string
 #    #default = "POC"
