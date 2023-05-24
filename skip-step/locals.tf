@@ -1,5 +1,6 @@
 locals {
   tags = {
-      Environment = var.EnvironmentName
+      Environment = var.Env
+      Location = var.Location
   }
 }
