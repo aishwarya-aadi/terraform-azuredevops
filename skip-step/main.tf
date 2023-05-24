@@ -26,40 +26,14 @@ module "vnet"{
 
 
 module "subnet" {
-  #for_each = var.subnets
   source = "./modules/vnet_subnet_hub"
   RgHubName = var.RgHubName #"rg-network-${var.Env}-${var.Location}"
   VnetHubName = var.VnetHubName
   Location            = var.Location
-  #name = each.value["name"]
-  #address_prefixes = each.value["address_prefixes"]
 }
   
-module "private_dns_zones" {
-  source = "./modules/private_dns_zones"
-  RgHubName = var.RgHubName
+#module "private_dns_zones" {
+#  source = "./modules/private_dns_zones"
+#  RgHubName = var.RgHubName
 }
 
-
-#resource "azurerm_resource_group" "rg" {
-#  name     = "rg-network-${var.Env}-${var.Location}"
-#  location = "${var.Location}"
-#}
-
-#resource "azurerm_virtual_network" "vnet" {
-#  name                = "vnet-${var.Env}-${var.Location}"
-#  address_space       = var.VnetHubIp
-#  location            = var.Location
-#  resource_group_name = "rg-network-${var.Env}-${var.Location}"
-#}
-
-#resource "azurerm_subnet" "subnet" {
-#    for_each = var.subnets
-#    resource_group_name = "rg-network-${var.Env}-${var.Location}"
-#    virtual_network_name = azurerm_virtual_network.vnet.name
-#    name = each.value["name"]
-#    address_prefixes = each.value["address_prefixes"]
-#  
-#}
-#
-#
