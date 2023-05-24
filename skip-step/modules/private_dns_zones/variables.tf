@@ -1,8 +1,3 @@
-variable "DnsZone" {
-    type = string
-   
-}
-
 variable "RgHubName" {
   type = string
 }
