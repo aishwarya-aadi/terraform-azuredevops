@@ -18,10 +18,10 @@ module "resource_group"{
 
 module "vnet"{
   source = "./modules/vnet_hub"
-  name                = var.VnetHubName #"vnet-${var.Env}-${var.Location}"
-  address_space       = var.VnetHubIp
-  location            = var.Location
-  resource_group_name = var.RgHubName
+  VnetHubName                = var.VnetHubName #"vnet-${var.Env}-${var.Location}"
+  VnetHubIp       = var.VnetHubIp
+  Location            = var.Location
+  RgHubName = var.RgHubName
 }
 
 
