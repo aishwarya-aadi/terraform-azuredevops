@@ -1,12 +1,37 @@
 variable "Env" {
     type = string
-    #default = "POC"
+    
 }
 
 variable "Location" {
     type = string
-   # default = "westeurope"
+   
 }
+
+
+variable "VnetHubIp" {
+  type = any
+  default = []
+}
+
+
+variable "VnetHubName" {
+  type = any
+  default = []
+}
+
+variable "RgHubName" {
+  type = any
+  default = []
+#variable "Env" {
+#    type = string
+#    #default = "POC"
+#}
+#
+#variable "Location" {
+#    type = string
+#   # default = "westeurope"
+#}
 
 #variable "RgHubName" {
 #    type = string
