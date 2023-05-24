@@ -24,6 +24,11 @@ variable "RgHubName" {
   type = any
   default = []
 }
+
+variable "subnets" {
+    type = map(any)
+    default = {}
+}
 #variable "Env" {
 #    type = string
 #    #default = "POC"
