@@ -11,8 +11,8 @@ provider "azurerm" {
 
 module "resource_group"{
   source = "./modules/resource_group_hub"
-  name     = var.RgHubName
-  location = var.Location
+ # name     = var.RgHubName
+  Location = var.Location
 }
 
 
