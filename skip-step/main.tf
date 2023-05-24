@@ -26,7 +26,7 @@ module "vnet"{
 
 
 module "subnet" {
-  for_each = var.subnets
+  #for_each = var.subnets
   source = "./modules/vnet_subnet_hub"
   RgHubName = var.RgHubName #"rg-network-${var.Env}-${var.Location}"
   VnetHubName = var.VnetHubName
