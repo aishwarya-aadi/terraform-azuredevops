@@ -1,20 +1,20 @@
 variable "Env" {
-    type = "string"
+    type = string
     default = "POC"
 }
 
 variable "Location" {
-    type = "string"
+    type = string
     default = "westeurope"
 }
 
 variable "RgHubName" {
-    type = "string"
+    type = string
     default = "rg-network-$Env-$Location-001"
 }
 
 variable "VnetHubName" {
-  type = "string"
+  type = string
   default = "vnet-hub-$Env-$Location-001"
 }
 
