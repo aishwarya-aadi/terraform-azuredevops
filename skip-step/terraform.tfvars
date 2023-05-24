@@ -31,3 +31,16 @@ subnets = {
         address_prefixes =["10.0.4.0/24"]        
       }
     } 
+variable "DnsZone" {
+    type = map(any)
+    default = {
+      DnsZone_1 = {
+        name  = "mydomain1.com"
+      }
+
+      DnsZone_2 = {
+        name = "mydomain1.com"
+      } 
+
+    }
+}
