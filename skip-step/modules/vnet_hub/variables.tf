@@ -9,7 +9,7 @@ variable "Location" {
 }
 
 
-variable "VnetHubIprange" {
+variable "VnetHubIp" {
   type = any
   default = []
 }
