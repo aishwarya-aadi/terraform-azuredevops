@@ -14,12 +14,12 @@ resource "azurerm_resource_group" "rg" {
   location = "${var.Location}"
 }
 
-resource "azurerm_virtual_network" "vnet" {
-  name                = "vnet-${var.Env}-${var.Location}"
-  address_space       = var.VnetHubIp
-  location            = var.Location
-  resource_group_name = "rg-network-${var.Env}-${var.Location}"
-}
+#resource "azurerm_virtual_network" "vnet" {
+#  name                = "vnet-${var.Env}-${var.Location}"
+#  address_space       = var.VnetHubIp
+#  location            = var.Location
+#  resource_group_name = "rg-network-${var.Env}-${var.Location}"
+#}
 
 #resource "azurerm_subnet" "subnet" {
 #    for_each = var.subnets
