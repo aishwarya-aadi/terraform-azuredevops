@@ -1,0 +1,2 @@
+Env = "Dev"
+Location = "westeurope"
