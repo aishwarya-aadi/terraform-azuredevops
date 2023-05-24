@@ -30,6 +30,7 @@ module "subnet" {
   source = "./modules/vnet_subnet_hub"
   RgHubName = var.RgHubName #"rg-network-${var.Env}-${var.Location}"
   VnetHubName = var.VnetHubName
+  Location            = var.Location
   #name = each.value["name"]
   #address_prefixes = each.value["address_prefixes"]
 }
