@@ -1,7 +1,7 @@
-variable "Env" {
-    type = string
-    
-}
+#variable "Env" {
+#    type = string
+#    
+#}
 
 variable "Location" {
     type = string
