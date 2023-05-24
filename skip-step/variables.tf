@@ -42,7 +42,7 @@ variable "subnets" {
 
       subnet_4 = {
         name = "SubnetDnsPrOutbound"
-        address_prefixes =["10.0.1.0/27"]        
+        address_prefixes =["10.0.3.0/24"]        
       }
       subnet_5 = {
         name = "SubnetPrivateLink"
