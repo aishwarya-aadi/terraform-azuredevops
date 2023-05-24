@@ -37,7 +37,7 @@ variable "subnets" {
 
       subnet_3 = {
         name = "SubnetDnsPrInbound"
-        address_prefixes =["10.0.1.0/26"]        
+        address_prefixes =["10.0.2.0/24"]        
       }
 
       subnet_4 = {
