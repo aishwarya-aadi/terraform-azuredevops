@@ -46,7 +46,7 @@ variable "subnets" {
       }
       subnet_5 = {
         name = "SubnetPrivateLink"
-        address_prefixes =["10.0.1.0/28"]        
+        address_prefixes =["10.0.4.0/24"]        
       }
     } 
 }
