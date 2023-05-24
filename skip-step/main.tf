@@ -34,6 +34,11 @@ module "subnet" {
   #name = each.value["name"]
   #address_prefixes = each.value["address_prefixes"]
 }
+  
+module "private_dns_zones" {
+  source = "./modules/private_dns_zones"
+  RgHubName = var.RgHubName
+}
 
 
 #resource "azurerm_resource_group" "rg" {
