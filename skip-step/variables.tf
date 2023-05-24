@@ -10,12 +10,12 @@ variable "Location" {
 
 variable "RgHubName" {
     type = string
-    default = "rg-network-$Env-$Location-001"
+    default = "rg-network-${var.Env}-${var.Location}-001"
 }
 
 variable "VnetHubName" {
   type = string
-  default = "vnet-hub-$Env-$Location-001"
+  default = "vnet-hub-${var.Env}-${var.Location}-001"
 }
 
 variable "VnetHubIp" {
