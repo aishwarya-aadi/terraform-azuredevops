@@ -11,7 +11,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
   name     = "rg-network-${var.Env}-${var.Location}"
-  location = "vnet-${var.Env}-${var.Location}"
+  location = "${var.Location}"
 }
 
 #resource "azurerm_virtual_network" "vnet" {
