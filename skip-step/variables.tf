@@ -1,21 +1,20 @@
 variable "Env" {
     type = string
-    default = "POC"
+    #default = "POC"
 }
 
 variable "Location" {
     type = string
-    default = "westeurope"
+   # default = "westeurope"
 }
 
 variable "RgHubName" {
     type = string
-    default = "rg-network-${var.Env}-${var.Location}-001"
 }
 
 variable "VnetHubName" {
   type = string
-  default = "vnet-hub-${var.Env}-${var.Location}-001"
+
 }
 
 variable "VnetHubIp" {
@@ -51,3 +50,4 @@ variable "subnets" {
       }
     } 
 }
+
