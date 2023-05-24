@@ -35,5 +35,5 @@ module "subnet" {
 #module "private_dns_zones" {
 #  source = "./modules/private_dns_zones"
 #  RgHubName = var.RgHubName
-}
+#}
 
