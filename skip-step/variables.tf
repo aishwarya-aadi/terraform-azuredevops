@@ -32,7 +32,7 @@ variable "subnets" {
 
       subnet_2 = {
         name = "SubnetFirewall"
-        address_prefixes =["10.0.1.0/25"]
+        address_prefixes =["10.0.0.0/24"]
       } 
 
       subnet_3 = {
