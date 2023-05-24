@@ -10,8 +10,8 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = var.rg_name #"terraform-rg"
-  location = var.location #"eastus"
+  name     = var.RgHubName
+  location = var.Location
 }
 
 #resource "azurerm_virtual_network" "vnet" {
