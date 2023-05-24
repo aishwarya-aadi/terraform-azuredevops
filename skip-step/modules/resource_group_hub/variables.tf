@@ -4,6 +4,5 @@ variable "Location" {
 }
 
 variable "RgHubName" {
-  type = any
-  default = []
+  type = string
 }
