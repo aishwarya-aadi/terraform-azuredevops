@@ -16,13 +16,13 @@ module "resource_group"{
 }
 
 
-#module "vnet"{
-#  source = "./modules/vnet_hub"
-#  name                = var.VnetHubName #"vnet-${var.Env}-${var.Location}"
-#  address_space       = var.VnetHubIp
-#  location            = var.Location
-#  resource_group_name = var.RgHubName
-#}
+module "vnet"{
+  source = "./modules/vnet_hub"
+  name                = var.VnetHubName #"vnet-${var.Env}-${var.Location}"
+  address_space       = var.VnetHubIp
+  location            = var.Location
+  resource_group_name = var.RgHubName
+}
 
 
 #module "subnet" {
