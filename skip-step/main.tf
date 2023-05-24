@@ -25,14 +25,14 @@ module "vnet"{
 }
 
 
-module "subnet" {
-  for_each = var.subnets
-  source = "./modules/vnet_subnet_hub"
-  resource_group_name = var.RgHubName #"rg-network-${var.Env}-${var.Location}"
-  virtual_network_name = var.VnetHubName
-  name = each.value["name"]
-  address_prefixes = each.value["address_prefixes"]
-}
+#module "subnet" {
+#  for_each = var.subnets
+#  source = "./modules/vnet_subnet_hub"
+#  resource_group_name = var.RgHubName #"rg-network-${var.Env}-${var.Location}"
+#  virtual_network_name = var.VnetHubName
+#  name = each.value["name"]
+#  address_prefixes = each.value["address_prefixes"]
+#}
 
 
 #resource "azurerm_resource_group" "rg" {
