@@ -25,12 +25,12 @@ module "vnet"{
 }
 
 
-module "subnet" {
-  source = "./modules/vnet_subnet_hub"
-  RgHubName = var.RgHubName #"rg-network-${var.Env}-${var.Location}"
-  VnetHubName = var.VnetHubName
-  Location            = var.Location
-}
+#module "subnet" {
+#  source = "./modules/vnet_subnet_hub"
+#  RgHubName = var.RgHubName #"rg-network-${var.Env}-${var.Location}"
+#  VnetHubName = var.VnetHubName
+#  Location            = var.Location
+#}
   
 #module "private_dns_zones" {
 #  source = "./modules/private_dns_zones"
