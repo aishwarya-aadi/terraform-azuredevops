@@ -9,11 +9,11 @@ provider "azurerm" {
   features {}
 }
 
-module "resource_group"{
-  source = "./modules/resource_group_hub"
-  RgHubName = var.RgHubName 
-  Location = var.Location
-}
+#module "resource_group"{
+#  source = "./modules/resource_group_hub"
+#  RgHubName = var.RgHubName 
+#  Location = var.Location
+#}
 
 
 #module "vnet"{
